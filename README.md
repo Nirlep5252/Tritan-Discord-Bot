@@ -157,8 +157,8 @@ Maybe. Feel free to submit PRs and issues, but unless they are explicitly bug fi
 
 ## 📝 Credits
 * Tritan's Backend was developed by [DylanJames#0420](https://github.com/dylanjamesdev)
-* Tritan's Dashboard was developed by Windows#0001 and [DylanJames#0420]((https://github.com/dylanjamesdev)
-* Tritan Bot is currently being maintained by [Team Tritan](https://gitlab.com/team-tritan) and their team of developers which includes Crafterzman#8726.
+* Tritan's Dashboard was developed by [Windows#0001](https://github.com/orgs/Team-Tritan/people/WindowsCmd) and [DylanJames#0420](https://github.com/dylanjamesdev)
+* Tritan Bot is currently being maintained by [Team Tritan](https://gitlab.com/team-tritan) and their team of developers which includes [Crafterzman#8726](https://github.com/orgs/Team-Tritan/people/Craftzman7).
 
 ## 📝 Inspiration
 * The music aspect of this bot is inspired by [Evobot](https://github.com/eritislami/evobot). 
