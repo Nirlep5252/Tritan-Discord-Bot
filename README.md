@@ -147,7 +147,7 @@ pm2 startup
 
 Maybe. Feel free to submit PRs and issues, but unless they are explicitly bug fixes that have good documentation and clean code, I likely won't merge. Features will not be accepted through PR unless stated elsewhere. Do not submit feedback on this repository, the server is the right place for that. PRs focused around the frontend and web panel are more likely to be accepted.
 
-1. [Fork the repository](https://gitlab.com/team-tritan/tritan-bot/fork)
+1. [Fork the repository](https://github.com/team-tritan/tritan-bot/fork)
 2. Clone your fork: `git clone https://gitlab.com/your-username/tritan-bot.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am 'Add some feature'`
@@ -156,8 +156,8 @@ Maybe. Feel free to submit PRs and issues, but unless they are explicitly bug fi
 
 
 ## 📝 Credits
-* Tritan's Backend was developed by [DylanJames#0420](https://gitlab.com/dylanjames)
-* Tritan's Dashboard was developed by Windows#0001 and [DylanJames#0420](https://gitlab.com/dylanjames)
+* Tritan's Backend was developed by [DylanJames#0420](https://github.com/dylanjamesdev)
+* Tritan's Dashboard was developed by Windows#0001 and [DylanJames#0420]((https://github.com/dylanjamesdev)
 * Tritan Bot is currently being maintained by [Team Tritan](https://gitlab.com/team-tritan) and their team of developers which includes Crafterzman#8726.
 
 ## 📝 Inspiration
