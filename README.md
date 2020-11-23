@@ -97,7 +97,7 @@ Probably not. Tugboat has enough moving pieces that running a local version is c
 ## 🚀 Getting Started
 
 ```
-git clone https://gitlab.com/team-tritan/tritan-bot.git 
+git clone https://github.com/team-tritan/tritan-bot.git 
 cd tritan-bot
 cd bot
 npm i 
