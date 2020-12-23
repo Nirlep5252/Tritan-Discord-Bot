@@ -88,7 +88,7 @@ While there is no documentation to run Tritan Bot yourself because it's not sugg
 
 <h2> Should I Run Tritan Bot Locally? </h2>
 
-Probably not. Tugboat has enough moving pieces that running a local version is complicated. The main purpose of having the source released is to allow others to understand and audit the functionality. The code is by no means meant to be easy to setup or bootstrap, and I don't plan on supporting folks trying to run locally. That said, feel free to run a local version of Tritan for your server (but not a public version please).
+Probably not. Tritan Bot has enough moving pieces that running a local version is complicated. The main purpose of having the source released is to allow others to understand and audit the functionality. The code is by no means meant to be easy to setup or bootstrap, and I don't plan on supporting folks trying to run locally. That said, feel free to run a local version of Tritan for your server (but not a public version please).
 
 <h2> Self-hosting Agreement </h2>
 
