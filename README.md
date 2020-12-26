@@ -22,9 +22,11 @@ Tritan Bot </h2>
     </a>
             <a href="https://tritanbot.xyz/support">
       <img src="https://img.shields.io/badge/Support:-Discord Server%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
+    </a>            
+          <a href="https://hub.docker.com/repository/docker/dylanjamesdev/tritan-bot">
+      <img src="https://img.shields.io/badge/Deploy Now:-Docker Image%20%E2%86%92-gray.svg?colorA=655BE1&colorB=4F44D6&style=for-the-badge"/>
     </a>
   </p>
-
 
 <h2>Can I add Tritan Bot to my server?</h2>
 
@@ -40,7 +42,7 @@ While there is no documentation to run Tritan Bot yourself because it's not sugg
 
 <h2> Features & Commands </h2>
 
-> Note: The default prefix is '\*'
+> Note: The default prefix is `*`
 
 - Play music from YouTube via url
 - Play music from YouTube via search query
@@ -88,7 +90,7 @@ While there is no documentation to run Tritan Bot yourself because it's not sugg
 
 <h2> Should I Run Tritan Bot Locally? </h2>
 
-Probably not. Tritan Bot has enough moving pieces that running a local version is complicated. The main purpose of having the source released is to allow others to understand and audit the functionality. The code is by no means meant to be easy to setup or bootstrap, and I don't plan on supporting folks trying to run locally. That said, feel free to run a local version of Tritan for your server (but not a public version please).
+Probably not. Tugboat has enough moving pieces that running a local version is complicated. The main purpose of having the source released is to allow others to understand and audit the functionality. The code is by no means meant to be easy to setup or bootstrap, and I don't plan on supporting folks trying to run locally. That said, feel free to run a local version of Tritan for your server (but not a public version please).
 
 <h2> Self-hosting Agreement </h2>
 
@@ -107,10 +109,14 @@ Probably not. Tritan Bot has enough moving pieces that running a local version i
 4. At least 4GB of Ram
 5. MongoDB **[Guide](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/)**
 6. Dedicated IP
+7. Discord Webhooks
+8. Ubuntu **[Development Build Tools](https://www.osradar.com/install-development-build-tools-ubuntu-20-04/)**
+
 
 <h2> Getting Started </h2>
 
 ```
+sudo apt install build-essential
 git clone https://github.com/team-tritan/tritan-bot.git
 cd tritan-bot
 npm i
@@ -122,7 +128,23 @@ npm i
 You will need to fill in everything that is blank in the `config` directory. It can be confusing, but it's super easy once you know what you're doing. If you require any assistance please join our support server.
 ```
 
-<h2> Start Up </h2>
+<h2> Docker Deployment </h2>
+
+```
+If you decided to self host this bot, I 100% recommend that you use Docker Image as it's maintained, and it's ready to deploy using pm2 node directly after adding the enviroment variables. 
+
+1. Install Docker
+2. docker run -t -d -p 80:80 -p 65535:65535 --name {NAME} dylanjamesdev/tritan-bot
+3. docker exec -it {NAME} bash
+4. cd
+5. cd tritan-bot && cd bot && cd src
+6. pm2 start clusters.js --name Tritan-Bot
+7. cd
+8. cd web
+9. pm2 start index.js --name Tritan-Web
+```
+
+<h2> Non-Docker Deployment </h2>
 
 After installation finishes you can use pm2 to run this bot and web dashboard seperately. You must start these scripts from within their own directory, using `node ../../../index.js` will NOT work!
 
@@ -169,7 +191,7 @@ Maybe. Feel free to submit PRs and issues, but unless they are explicitly bug fi
 <h2> Credits </h2>
 
 - Tritan's Backend was developed by [DylanJames#0420](https://github.com/dylanjamesdev), and maintained by [Crafterzman#8726](https://github.com/orgs/Team-Tritan/people/Craftzman7).
-- Tritan's Dashboard was developed by [Windows#0001](https://github.com/orgs/Team-Tritan/people/WindowsCmd) and [DylanJames#0420](https://github.com/dylanjamesdev)
+- Tritan's Dashboard was developed by [Windows#0001](https://github.com/orgs/Team-Tritan/people/WindowsCmd) and [DylanJames#0420](https://github.com/dylanjamesdev).
 - Tritan Bot is currently being maintained by [Team Tritan](https://gitlab.com/team-tritan) and their team of developers.
 
 <h2> Inspiration </h2>
